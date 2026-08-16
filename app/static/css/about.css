@@ -1,0 +1,1438 @@
+/* ==========================================================
+   JAYASH PHYSIO
+   CLINIC INTRODUCTION
+   Healers-inspired redesign
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.jayash-clinic-intro {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 100px 0;
+
+    background:
+        radial-gradient(
+            circle at 8% 20%,
+            rgba(47, 128, 237, 0.07),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 92% 80%,
+            rgba(18, 48, 74, 0.06),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #eef2f3 0%,
+            #e6edf2 48%,
+            #f1f3f2 100%
+        );
+
+}
+
+
+/* ==========================================================
+   BACKGROUND DECORATION
+========================================================== */
+
+.jayash-clinic-intro::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    top: -140px;
+
+    right: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(47, 128, 237, 0.06);
+
+    filter: blur(10px);
+
+    pointer-events: none;
+
+}
+
+
+.jayash-clinic-intro::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+
+    height: 220px;
+
+    bottom: -110px;
+
+    left: -80px;
+
+    border-radius: 50%;
+
+    background: rgba(18, 48, 74, 0.05);
+
+    filter: blur(8px);
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
+.jayash-clinic-heading {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 760px;
+
+    margin: 0 auto 55px;
+
+}
+
+
+/* ==========================================================
+   EYEBROW
+========================================================== */
+
+.jayash-clinic-eyebrow {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+    color: #de1717;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+
+}
+
+
+.jayash-clinic-line {
+
+    width: 35px;
+
+    height: 3px;
+
+    flex-shrink: 0;
+
+    background: #de1717;
+
+    border-radius: 10px;
+
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.jayash-clinic-title {
+
+    margin: 0;
+
+    color: #12304a;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1.5px;
+
+}
+
+
+/* ==========================================================
+   SUBTITLE
+========================================================== */
+
+.jayash-clinic-subtitle {
+
+    max-width: 650px;
+
+    margin: 18px auto 0;
+
+    color: #617586;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   INFORMATION ROW
+========================================================== */
+
+.jayash-clinic-info-row {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* ==========================================================
+   BOARD CARD
+========================================================== */
+
+.jayash-clinic-board-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    height: 100%;
+
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(18, 48, 74, 0.06);
+
+    box-shadow:
+        0 18px 45px rgba(18, 48, 74, 0.10);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.jayash-clinic-board-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 26px 55px rgba(18, 48, 74, 0.15);
+
+}
+
+
+/* ==========================================================
+   BOARD IMAGE
+========================================================== */
+
+.jayash-clinic-board-image {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 300px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform .5s ease;
+
+}
+
+
+.jayash-clinic-board-card:hover
+.jayash-clinic-board-image {
+
+    transform: scale(1.035);
+
+}
+
+
+/* ==========================================================
+   IMAGE OVERLAY
+========================================================== */
+
+.jayash-clinic-board-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(18, 48, 74, .22),
+            transparent 50%
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================================
+   COMMON INFORMATION CARDS
+========================================================== */
+
+.jayash-hours-card,
+.jayash-motto-card {
+
+    position: relative;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #12304a 0%,
+            #19496c 55%,
+            #245f87 100%
+        );
+
+    box-shadow:
+        0 18px 45px rgba(18, 48, 74, 0.17);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+.jayash-hours-card:hover,
+.jayash-motto-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 27px 58px rgba(18, 48, 74, 0.24);
+
+}
+
+
+/* ==========================================================
+   OPEN HOURS CARD
+========================================================== */
+
+.jayash-hours-card {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 32px 34px;
+
+}
+
+
+/* ==========================================================
+   OPEN HOURS INNER CONTENT
+========================================================== */
+
+.jayash-hours-inner {
+
+    width: 100%;
+
+    max-width: 320px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+/* ==========================================================
+   OPEN HOURS HEADING
+========================================================== */
+
+.jayash-hours-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: fit-content;
+
+    gap: 16px;
+
+    margin: 0 auto 20px;
+
+}
+
+
+/* ==========================================================
+   COMMON INFORMATION ICON
+========================================================== */
+
+.jayash-info-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    margin: 0;
+
+    border-radius: 14px;
+
+    background: rgba(255,255,255,.12);
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,.10);
+
+}
+
+
+/* ==========================================================
+   OPEN HOURS TITLE
+========================================================== */
+
+.jayash-info-title {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    text-align: left;
+
+}
+
+
+/* ==========================================================
+   HOURS LIST
+========================================================== */
+
+.jayash-hours-list {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 0 auto;
+
+}
+
+
+/* ==========================================================
+   HOURS ROW
+========================================================== */
+
+.jayash-hours-row {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    width: 100%;
+
+    padding: 12px 0;
+
+    color: #d8e8f4;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+}
+
+
+.jayash-hours-row:first-child {
+
+    border-top: 1px solid rgba(255,255,255,.13);
+
+}
+
+
+.jayash-hours-row:last-child {
+
+    border-top: 1px solid rgba(255,255,255,.13);
+
+    border-bottom: 1px solid rgba(255,255,255,.13);
+
+}
+
+
+.jayash-hours-row strong {
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+.jayash-appointment-text {
+
+    color: #8cc9f7 !important;
+
+}
+
+
+/* ==========================================================
+   MOTTO CARD
+========================================================== */
+
+.jayash-motto-card {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 32px 34px;
+
+}
+
+
+/* ==========================================================
+   MOTTO INNER CONTENT
+========================================================== */
+
+.jayash-motto-inner {
+
+    width: 100%;
+
+    max-width: 330px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+/* ==========================================================
+   MOTTO HEADING
+========================================================== */
+
+.jayash-motto-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: fit-content;
+
+    gap: 16px;
+
+    margin: 0 auto 18px;
+
+}
+
+
+/* ==========================================================
+   MOTTO ICON
+========================================================== */
+
+.jayash-motto-icon {
+
+    background: rgba(255,255,255,.12);
+
+    color: #ffffff;
+
+}
+
+
+/* ==========================================================
+   MOTTO TITLE
+========================================================== */
+
+.jayash-motto-title {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    text-align: left;
+
+}
+
+
+/* ==========================================================
+   MOTTO CONTENT
+========================================================== */
+
+.jayash-motto-content {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    text-align: center;
+
+}
+
+
+/* ==========================================================
+   MOTTO SECONDARY
+========================================================== */
+
+.jayash-motto-secondary {
+
+    margin: 0;
+
+    color: #8cc9f7;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    line-height: 1.45;
+
+}
+
+
+/* ==========================================================
+   MOTTO PRIMARY
+========================================================== */
+
+.jayash-motto-primary {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    line-height: 1.45;
+
+}
+
+
+/* ==========================================================
+   HOME VISIT CARD
+========================================================== */
+
+.jayash-home-visit-card {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: auto auto 1fr;
+
+    align-items: center;
+
+    column-gap: 18px;
+
+    width: 100%;
+
+    padding: 26px 34px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #12304a 0%,
+            #19496c 55%,
+            #245f87 100%
+        );
+
+    box-shadow:
+        0 18px 45px rgba(18, 48, 74, 0.17);
+
+    overflow: hidden;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+/* ==========================================================
+   HOME VISIT DECORATION
+========================================================== */
+
+.jayash-home-visit-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    right: -70px;
+
+    top: -90px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.06);
+
+    pointer-events: none;
+
+}
+
+
+.jayash-home-visit-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 140px;
+
+    height: 140px;
+
+    left: -60px;
+
+    bottom: -80px;
+
+    border-radius: 50%;
+
+    background: rgba(140,201,247,0.06);
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================================
+   HOME VISIT HOVER
+========================================================== */
+
+.jayash-home-visit-card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 27px 58px rgba(18,48,74,0.24);
+
+}
+
+
+/* ==========================================================
+   HOME VISIT ICON
+========================================================== */
+
+.jayash-home-visit-icon {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.12);
+
+    color: #ffffff;
+
+    font-size: 23px;
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,0.10);
+
+}
+
+
+/* ==========================================================
+   HOME VISIT TITLE
+========================================================== */
+
+.jayash-home-visit-title {
+
+    position: relative;
+
+    z-index: 1;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+
+}
+
+
+/* ==========================================================
+   HOME VISIT DESCRIPTION
+========================================================== */
+
+.jayash-home-visit-text {
+
+    position: relative;
+
+    z-index: 1;
+
+    margin: 0;
+
+    color: #d8e8f4;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    line-height: 1.6;
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+    .jayash-clinic-intro {
+
+        padding: 85px 0;
+
+    }
+
+
+    .jayash-clinic-heading {
+
+        margin-bottom: 45px;
+
+    }
+
+
+    .jayash-clinic-title {
+
+        font-size: 42px;
+
+    }
+
+
+    .jayash-clinic-board-image {
+
+        min-height: 280px;
+
+    }
+
+
+    .jayash-hours-card,
+    .jayash-motto-card {
+
+        min-height: 280px;
+
+    }
+
+
+    /* ======================================================
+       HOME VISIT
+    ====================================================== */
+
+    .jayash-home-visit-card {
+
+        grid-template-columns: auto 1fr;
+
+        row-gap: 4px;
+
+        padding: 26px 30px;
+
+    }
+
+
+    .jayash-home-visit-icon {
+
+        grid-row: span 2;
+
+    }
+
+
+    .jayash-home-visit-title {
+
+        white-space: normal;
+
+        font-size: 20px;
+
+    }
+
+
+    .jayash-home-visit-text {
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+    .jayash-clinic-intro {
+
+        padding: 70px 0;
+
+        background:
+            linear-gradient(
+                160deg,
+                #edf1f2 0%,
+                #e4ebef 50%,
+                #f0f2f1 100%
+            );
+
+    }
+
+
+    /* ======================================================
+       SECTION HEADING
+    ====================================================== */
+
+    .jayash-clinic-heading {
+
+        margin-bottom: 38px;
+
+        padding: 0 10px;
+
+    }
+
+
+    .jayash-clinic-eyebrow {
+
+        gap: 6px;
+
+        font-size: 10px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .jayash-clinic-line {
+
+        width: 20px;
+
+    }
+
+
+    .jayash-clinic-title {
+
+        font-size: 34px;
+
+        line-height: 1.2;
+
+        letter-spacing: -.8px;
+
+    }
+
+
+    .jayash-clinic-subtitle {
+
+        margin-top: 14px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* ======================================================
+       BOARD
+    ====================================================== */
+
+    .jayash-clinic-board-card {
+
+        height: auto;
+
+    }
+
+
+    .jayash-clinic-board-image {
+
+        width: 100%;
+
+        height: auto;
+
+        min-height: 0;
+
+        aspect-ratio: 16 / 9;
+
+        object-fit: cover;
+
+    }
+
+
+    /* ======================================================
+       INFORMATION CARDS
+    ====================================================== */
+
+    .jayash-hours-card,
+    .jayash-motto-card {
+
+        min-height: 0;
+
+        height: auto;
+
+        padding: 30px 28px;
+
+        border-radius: 20px;
+
+    }
+
+
+    /* ======================================================
+       INFORMATION CARD INNER CONTENT
+    ====================================================== */
+
+    .jayash-hours-inner,
+    .jayash-motto-inner {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        align-items: center;
+
+        justify-content: center;
+
+        margin: auto;
+
+        text-align: center;
+
+    }
+
+
+    /* ======================================================
+       INFORMATION ICON
+    ====================================================== */
+
+    .jayash-info-icon {
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 19px;
+
+    }
+
+
+    /* ======================================================
+       OPEN HOURS
+    ====================================================== */
+
+    .jayash-hours-heading {
+
+        gap: 14px;
+
+        margin-bottom: 18px;
+
+    }
+
+
+    .jayash-info-title {
+
+        font-size: 27px;
+
+        line-height: 1.2;
+
+        text-align: left;
+
+    }
+
+
+    .jayash-hours-list {
+
+        width: 100%;
+
+        max-width: 300px;
+
+        margin: 0 auto;
+
+    }
+
+
+    .jayash-hours-row {
+
+        padding: 11px 0;
+
+        align-items: center;
+
+        text-align: center;
+
+    }
+
+
+    /* ======================================================
+       MOTTO
+    ====================================================== */
+
+    .jayash-motto-heading {
+
+        gap: 14px;
+
+        margin-bottom: 16px;
+
+    }
+
+
+    .jayash-motto-title {
+
+        font-size: 19px;
+
+        line-height: 1.45;
+
+        text-align: left;
+
+    }
+
+
+    .jayash-motto-content {
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 6px;
+
+        text-align: center;
+
+    }
+
+
+    .jayash-motto-primary,
+    .jayash-motto-secondary {
+
+        font-size: 19px;
+
+        line-height: 1.5;
+
+        text-align: center;
+
+    }
+
+
+    /* ======================================================
+       HOME VISIT
+    ====================================================== */
+
+    .jayash-home-visit-card {
+
+        display: grid;
+
+        grid-template-columns: 50px 1fr;
+
+        column-gap: 16px;
+
+        row-gap: 4px;
+
+        padding: 25px 26px;
+
+        border-radius: 20px;
+
+    }
+
+
+    .jayash-home-visit-icon {
+
+        grid-column: 1;
+
+        grid-row: 1;
+
+        width: 50px;
+
+        height: 50px;
+
+        border-radius: 14px;
+
+        font-size: 20px;
+
+    }
+
+
+    .jayash-home-visit-title {
+
+        grid-column: 2;
+
+        grid-row: 1;
+
+        align-self: center;
+
+        font-size: 19px;
+
+        line-height: 1.4;
+
+        white-space: normal;
+
+    }
+
+
+    .jayash-home-visit-text {
+
+        grid-column: 1 / -1;
+
+        grid-row: 2;
+
+        margin-top: 8px;
+
+        font-size: 14px;
+
+        line-height: 1.65;
+
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 400px) {
+
+    .jayash-clinic-intro {
+
+        padding: 60px 0;
+
+    }
+
+
+    .jayash-clinic-title {
+
+        font-size: 30px;
+
+    }
+
+
+    .jayash-clinic-subtitle {
+
+        font-size: 14px;
+
+    }
+
+
+    .jayash-clinic-board-image {
+
+        aspect-ratio: 4 / 3;
+
+    }
+
+
+    .jayash-hours-card,
+    .jayash-motto-card {
+
+        padding: 27px 23px;
+
+    }
+
+
+    .jayash-info-title {
+
+        font-size: 20px;
+
+    }
+
+
+    .jayash-motto-title {
+
+        font-size: 18px;
+
+    }
+
+
+    .jayash-motto-primary,
+    .jayash-motto-secondary {
+
+        font-size: 18px;
+
+    }
+
+
+    /* ======================================================
+       HOME VISIT
+    ====================================================== */
+
+    .jayash-home-visit-card {
+
+        grid-template-columns: 46px 1fr;
+
+        column-gap: 14px;
+
+        padding: 23px 20px;
+
+    }
+
+
+    .jayash-home-visit-icon {
+
+        width: 46px;
+
+        height: 46px;
+
+        font-size: 18px;
+
+    }
+
+
+    .jayash-home-visit-title {
+
+        font-size: 18px;
+
+    }
+
+
+    .jayash-home-visit-text {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   REDUCE MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .jayash-clinic-board-card,
+    .jayash-hours-card,
+    .jayash-motto-card,
+    .jayash-home-visit-card,
+    .jayash-clinic-board-image {
+
+        transition: none;
+
+    }
+
+}

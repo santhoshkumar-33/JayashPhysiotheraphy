@@ -1,0 +1,845 @@
+/* ==========================================================
+   JAYASH PHYSIO
+   TREATMENT PROCESS
+   Blue + Green Theme
+========================================================== */
+
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.treatment-process {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 100px 0 !important;
+
+    background:
+        radial-gradient(
+            1100px 460px at 82% -6%,
+            var(--brand-100) 0%,
+            rgba(231, 236, 251, 0) 60%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            var(--paper) 100%
+        );
+
+}
+
+
+/* ==========================================================
+   BACKGROUND DECORATION
+========================================================== */
+
+.treatment-process::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 280px;
+
+    height: 280px;
+
+    top: -140px;
+
+    right: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(47, 128, 237, 0.045);
+
+    filter: blur(10px);
+
+    pointer-events: none;
+
+}
+
+
+.treatment-process::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+
+    height: 220px;
+
+    bottom: -110px;
+
+    left: -80px;
+
+    border-radius: 50%;
+
+    background: rgba(25, 135, 84, 0.035);
+
+    filter: blur(8px);
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================================
+   SECTION HEADING
+========================================================== */
+
+.treatment-process > .container > .text-center {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+
+    margin: 0 auto 55px !important;
+
+}
+
+
+/* ==========================================================
+   SECTION EYEBROW
+   Matches About / Services / Doctors visual language
+========================================================== */
+
+.treatment-process .section-tag {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    position: relative;
+
+    color: #de1717;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================================================
+   EYEBROW SIDE LINES
+========================================================== */
+
+.treatment-process .section-tag::before,
+.treatment-process .section-tag::after {
+
+    content: "";
+
+    display: block;
+
+    width: 35px;
+
+    height: 3px;
+
+    flex-shrink: 0;
+
+    border-radius: 10px;
+
+    background: #de1717;
+
+}
+
+
+/* ==========================================================
+   SECTION TITLE
+========================================================== */
+
+.treatment-process .section-title {
+
+    margin: 18px 0 0;
+
+    color: #12304a;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -1.5px;
+
+}
+
+
+/* ==========================================================
+   SECTION DESCRIPTION
+========================================================== */
+
+.process-description {
+
+    max-width: 680px;
+
+    margin: 18px auto 0;
+
+    color: #617586;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   PROCESS WRAPPER
+========================================================== */
+
+.process-wrapper {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* ==========================================================
+   PROCESS GRID
+========================================================== */
+
+.process-wrapper > .row {
+
+    position: relative;
+
+    z-index: 2;
+
+    align-items: stretch;
+
+}
+
+
+/* ==========================================================
+   CONNECTING LINE
+========================================================== */
+
+.process-line {
+
+    position: absolute;
+
+    z-index: 0;
+
+    top: 58px;
+
+    left: 8%;
+
+    right: 8%;
+
+    height: 4px;
+
+    background:
+        linear-gradient(
+            to right,
+            #0D6EFD,
+            #198754
+        );
+
+    border-radius: 50px;
+
+}
+
+
+/* ==========================================================
+   PROCESS COLUMN
+========================================================== */
+
+.process-wrapper .col-lg {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* ==========================================================
+   PROCESS CARD
+========================================================== */
+
+.process-card {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    height: 100%;
+
+    min-height: 310px;
+
+    padding: 48px 22px 27px;
+
+    border-radius: 24px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.06);
+
+    text-align: center;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+    border: 2px solid rgba(13, 110, 253, 0.18);
+
+}
+
+
+/* ==========================================================
+   CARD HOVER
+========================================================== */
+
+.process-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px rgba(0, 0, 0, 0.12);
+
+}
+
+
+/* ==========================================================
+   STEP NUMBER
+========================================================== */
+
+.step-number {
+
+    position: absolute;
+
+    top: -18px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #198754;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 10px 25px rgba(25, 135, 84, 0.30);
+
+    z-index: 4;
+
+}
+
+
+/* ==========================================================
+   PROCESS ICON
+========================================================== */
+
+.process-icon {
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 70px;
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    margin: 20px auto 20px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0D6EFD,
+            #3b82f6
+        );
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    box-shadow:
+        0 20px 40px rgba(13, 110, 253, 0.25);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+
+/* ==========================================================
+   ICON HOVER
+========================================================== */
+
+.process-card:hover .process-icon {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 24px 45px rgba(13, 110, 253, 0.30);
+
+}
+
+
+/* ==========================================================
+   PROCESS TITLE
+========================================================== */
+
+.process-card h4 {
+
+    margin: 0 0 14px;
+
+    color: #1b263b;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+}
+
+
+/* ==========================================================
+   PROCESS DESCRIPTION
+========================================================== */
+
+.process-card p {
+
+    max-width: 230px;
+
+    margin: 0;
+
+    color: #6b7280;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+    .treatment-process {
+
+        padding: 85px 0 !important;
+
+    }
+
+
+    /* ======================================================
+       HEADING
+    ====================================================== */
+
+    .treatment-process > .container > .text-center {
+
+        margin-bottom: 45px !important;
+
+    }
+
+
+    .treatment-process .section-title {
+
+        font-size: 42px;
+
+    }
+
+
+    /* ======================================================
+       CONNECTING LINE
+    ====================================================== */
+
+    .process-line {
+
+        display: none;
+
+    }
+
+
+    /* ======================================================
+       CARDS
+    ====================================================== */
+
+    .process-card {
+
+        min-height: 285px;
+
+        padding: 44px 25px 27px;
+
+    }
+
+
+    .process-icon {
+
+        width: 65px;
+
+        height: 65px;
+
+        font-size: 25px;
+
+    }
+
+
+    .process-card h4 {
+
+        font-size: 19px;
+
+    }
+
+
+    .process-card p {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+    .treatment-process {
+
+        padding: 70px 0 !important;
+
+        background:
+            radial-gradient(
+                700px 300px at 85% -5%,
+                var(--brand-100) 0%,
+                rgba(231, 236, 251, 0) 65%
+            ),
+            linear-gradient(
+                180deg,
+                #ffffff 0%,
+                var(--paper) 100%
+            );
+
+    }
+
+
+    /* ======================================================
+       SECTION HEADING
+    ====================================================== */
+
+    .treatment-process > .container > .text-center {
+
+        margin-bottom: 38px !important;
+
+        padding: 0 10px;
+
+    }
+
+
+    /* ======================================================
+       EYEBROW
+    ====================================================== */
+
+    .treatment-process .section-tag {
+
+        gap: 6px;
+
+        font-size: 10px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .treatment-process .section-tag::before,
+    .treatment-process .section-tag::after {
+
+        width: 20px;
+
+        height: 3px;
+
+    }
+
+
+    /* ======================================================
+       TITLE
+    ====================================================== */
+
+    .treatment-process .section-title {
+
+        margin-top: 16px;
+
+        font-size: 34px;
+
+        line-height: 1.2;
+
+        letter-spacing: -.8px;
+
+    }
+
+
+    /* ======================================================
+       DESCRIPTION
+    ====================================================== */
+
+    .process-description {
+
+        margin-top: 14px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* ======================================================
+       PROCESS WRAPPER
+    ====================================================== */
+
+    .process-wrapper {
+
+        padding: 0 5px;
+
+    }
+
+
+    /* ======================================================
+       CONNECTING LINE
+    ====================================================== */
+
+    .process-line {
+
+        display: none;
+
+    }
+
+
+    /* ======================================================
+       PROCESS CARD
+    ====================================================== */
+
+    .process-card {
+
+        min-height: 0;
+
+        border: 2px solid rgba(13, 110, 253, 0.18);
+
+        padding: 34px 25px 28px;
+
+        border-radius: 20px;
+
+    }
+
+
+    /* ======================================================
+       STEP NUMBER
+    ====================================================== */
+
+    .step-number {
+
+        top: -16px;
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 13px;
+
+    }
+
+
+    /* ======================================================
+       ICON
+    ====================================================== */
+
+    .process-icon {
+
+        width: 58px;
+
+        height: 58px;
+
+        margin: 16px auto 18px;
+
+        font-size: 22px;
+
+    }
+
+
+    /* ======================================================
+       TITLE
+    ====================================================== */
+
+    .process-card h4 {
+
+        margin-bottom: 10px;
+
+        font-size: 20px;
+
+    }
+
+
+    /* ======================================================
+       DESCRIPTION
+    ====================================================== */
+
+    .process-card p {
+
+        max-width: 430px;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 400px) {
+
+    .treatment-process {
+
+        padding: 60px 0 !important;
+
+    }
+
+
+    .treatment-process .section-title {
+
+        font-size: 30px;
+
+    }
+
+
+    .process-description {
+
+        font-size: 14px;
+
+    }
+
+
+    .process-card {
+
+        padding: 32px 21px 25px;
+
+        border: 2px solid rgba(13, 110, 253, 0.18);
+
+    }
+
+
+    .step-number {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 12px;
+
+    }
+
+
+    .process-icon {
+
+        width: 54px;
+
+        height: 54px;
+
+        font-size: 20px;
+
+    }
+
+
+    .process-card h4 {
+
+        font-size: 19px;
+
+    }
+
+
+    .process-card p {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   REDUCE MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .process-card,
+    .process-icon {
+
+        transition: none;
+
+    }
+
+}

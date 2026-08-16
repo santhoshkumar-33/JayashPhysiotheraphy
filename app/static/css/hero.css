@@ -1,0 +1,1248 @@
+/* ==========================================================
+   JAYASH PHYSIO
+   HERO SECTION
+   Healers-inspired redesign
+========================================================== */
+
+
+/* ==========================================================
+   HERO BACKGROUND
+========================================================== */
+
+.jayash-hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(1100px 460px at 82% -6%, var(--brand-100) 0%, rgba(231,236,251,0) 60%),
+        linear-gradient(180deg, #fff 0%, var(--paper) 100%);
+    overflow: hidden;
+
+}
+
+
+/* ==========================================================
+   HERO CONTAINER
+========================================================== */
+
+.jayash-hero-container {
+
+    position: relative;
+
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+/* ==========================================================
+   HERO ROW
+========================================================== */
+
+.jayash-hero-row {
+
+    min-height: calc(100vh - 80px);
+
+    padding-top: 55px;
+
+    padding-bottom: 55px;
+
+}
+
+
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.jayash-hero-content {
+
+    position: relative;
+
+    z-index: 5;
+
+    max-width: 620px;
+
+}
+
+
+/* ==========================================================
+   EYEBROW
+========================================================== */
+
+.jayash-hero-eyebrow {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 24px;
+
+    color: #183356;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.6px;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================================================
+   EYEBROW DECORATIVE LINES
+========================================================== */
+
+.jayash-eyebrow-line {
+
+    position: relative;
+
+    width: 38px;
+
+    height: 3px;
+
+    flex-shrink: 0;
+
+    background: #4c535e;
+
+}
+
+
+/* ==========================================================
+   HERO TITLE
+========================================================== */
+
+.jayash-hero-title {
+
+    margin: 0;
+
+    color: #384149;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 60px;
+
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    letter-spacing: -2.5px;
+
+}
+
+
+/* Highlighted text if used */
+
+.jayash-hero-title span {
+
+    color: #2f80ed;
+
+}
+
+
+/* ==========================================================
+   HERO DESCRIPTION
+========================================================== */
+
+.jayash-hero-description {
+
+    max-width: 530px;
+
+    margin-top: 28px;
+
+    margin-bottom: 0;
+
+    color: #617586;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+/* ==========================================================
+   HERO ACTIONS
+========================================================== */
+
+.jayash-hero-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 38px;
+
+}
+
+
+/* ==========================================================
+   PRIMARY BUTTON
+========================================================== */
+
+.jayash-hero-primary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    min-height: 54px;
+
+    padding: 14px 25px;
+
+    background: #2f80ed;
+
+    color: #ffffff;
+
+    border: 2px solid #2f80ed;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 10px 25px rgba(47, 128, 237, 0.20);
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+.jayash-hero-primary:hover {
+
+    background: #246fcc;
+
+    border-color: #246fcc;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 16px 32px rgba(47, 128, 237, 0.27);
+
+}
+
+
+.jayash-hero-primary i {
+
+    transition: transform .3s ease;
+
+}
+
+
+.jayash-hero-primary:hover i {
+
+    transform: translateX(4px);
+
+}
+
+
+/* ==========================================================
+   SECONDARY BUTTON
+========================================================== */
+
+.jayash-hero-secondary {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    min-height: 54px;
+
+    padding: 14px 25px;
+
+    background: #12304a;
+
+    color: #ffffff;
+
+    border: 2px solid #12304a;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 10px 25px rgba(18, 48, 74, 0.14);
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+.jayash-hero-secondary:hover {
+
+    background: #1d496d;
+
+    border-color: #1d496d;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 16px 32px rgba(18, 48, 74, 0.20);
+
+}
+
+
+.jayash-hero-secondary i {
+
+    transition: transform .3s ease;
+
+}
+
+
+.jayash-hero-secondary:hover i {
+
+    transform: translateX(4px);
+
+}
+
+
+/* ==========================================================
+   TRUST FEATURES
+========================================================== */
+
+.jayash-hero-trust {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 28px;
+
+    margin-top: 42px;
+
+}
+
+
+/* ==========================================================
+   TRUST ITEM
+========================================================== */
+
+.jayash-trust-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 16px;
+    color: #536777;
+    background: #ffffff;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    border: 1px solid #e3e8ec;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(29, 35, 40, 0.06);
+
+    transition: all 0.2s ease;
+}
+
+.jayash-trust-item:hover {
+    transform: translateY(-2px);
+    border-color: #cfd8de;
+    box-shadow: 0 5px 14px rgba(29, 35, 40, 0.1);
+}i
+
+
+/* ==========================================================
+   TRUST ICON
+========================================================== */
+
+.jayash-trust-icon {
+
+    width: 27px;
+
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #d9dee2;
+
+    color: #434a51;
+
+    font-size: 11px;
+
+}
+
+
+/* ==========================================================
+   HERO VISUAL
+========================================================== */
+
+.jayash-hero-visual {
+
+    position: relative;
+
+    min-height: 590px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* ==========================================================
+   HERO VISUAL BACKGROUND
+========================================================== */
+
+.jayash-hero-visual-bg {
+
+    position: absolute;
+
+    width: 510px;
+
+    height: 510px;
+
+    right: 0;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border-radius: 48% 52% 50% 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #dceeff 0%,
+            #cfe5f8 100%
+        );
+
+    box-shadow:
+        inset 0 0 60px rgba(255,255,255,.35);
+
+    z-index: 0;
+
+}
+
+
+/* ==========================================================
+   IMAGE WRAPPER
+========================================================== */
+
+.jayash-hero-image-wrapper {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 90%;
+
+    max-width: 570px;
+
+}
+
+
+/* ==========================================================
+   HERO IMAGE
+========================================================== */
+
+.jayash-hero-image {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+
+
+}
+
+
+/* ==========================================================
+   EXPERIENCE CARD
+========================================================== */
+
+.jayash-experience-badge {
+
+    position: absolute;
+
+    left: 2%;
+
+    bottom: 60px;
+
+    z-index: 5;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 17px 21px;
+
+    background: rgba(255,255,255,.96);
+
+    border: 3px solid rgba(0, 0, 0, 0.06);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 18px 45px rgba(18,48,74,.13);
+
+}
+
+
+/* ==========================================================
+   EXPERIENCE ICON
+========================================================== */
+
+.jayash-experience-badge::before {
+
+    content: "\f0f0";
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background: #e7f2ff;
+
+    color: #1f2731;
+
+    font-family: "Font Awesome 6 Free";
+
+    font-weight: 900;
+
+    font-size: 21px;
+
+}
+
+
+/* ==========================================================
+   EXPERIENCE NUMBER
+========================================================== */
+
+.jayash-experience-number {
+
+    color: #26669a;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 29px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+}
+
+
+/* ==========================================================
+   EXPERIENCE TEXT
+========================================================== */
+
+.jayash-experience-text {
+
+    color: #517fa4;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+
+}
+
+
+/* ==========================================================
+   SUBTLE HERO DECORATION
+========================================================== */
+
+.jayash-hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+
+    height: 260px;
+
+    top: -120px;
+
+    left: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(47,128,237,.07);
+
+    filter: blur(5px);
+
+}
+
+
+.jayash-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+
+    height: 180px;
+
+    right: -80px;
+
+    bottom: -70px;
+
+    border-radius: 50%;
+
+    background: rgba(18,48,74,.05);
+
+}
+
+
+/* ==========================================================
+   LARGE DESKTOP
+========================================================== */
+
+@media (max-width: 1399px) {
+
+    .jayash-hero-title {
+
+        font-size: 64px;
+
+    }
+
+
+    .jayash-hero-visual {
+
+        min-height: 550px;
+
+    }
+
+
+    .jayash-hero-visual-bg {
+
+        width: 450px;
+
+        height: 450px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+    .jayash-hero-container {
+
+        min-height: auto;
+
+    }
+
+
+    .jayash-hero-row {
+
+        min-height: auto;
+
+        padding-top: 50px;
+
+        padding-bottom: 60px;
+
+    }
+
+
+    .jayash-hero-content {
+
+        max-width: 700px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        text-align: center;
+
+    }
+
+
+    .jayash-hero-eyebrow {
+
+        justify-content: center;
+
+    }
+
+
+    .jayash-hero-title {
+
+        font-size: 56px;
+
+    }
+
+
+    .jayash-hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .jayash-hero-actions {
+
+        justify-content: center;
+
+    }
+
+
+    .jayash-hero-trust {
+
+        justify-content: center;
+
+    }
+
+
+    .jayash-hero-visual {
+
+        min-height: 500px;
+
+        margin-top: 30px;
+
+    }
+
+
+    .jayash-hero-visual-bg {
+
+        width: 430px;
+
+        height: 430px;
+
+        right: 50%;
+
+        transform: translate(50%, -50%);
+
+    }
+
+
+    .jayash-hero-image-wrapper {
+
+        width: 75%;
+
+    }
+
+
+    .jayash-experience-badge {
+
+        left: 10%;
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+    .jayash-hero {
+
+        background:
+            radial-gradient(1100px 460px at 82% -6%, var(--brand-100) 0%, rgba(231,236,251,0) 60%),
+            linear-gradient(180deg, #fff 0%, var(--paper) 100%);
+        overflow: hidden;
+
+    }
+
+
+    /* ------------------------------------------------------
+       MOBILE HERO ROW
+    ------------------------------------------------------ */
+
+    .jayash-hero-row {
+
+        padding-top: 28px;
+
+        padding-bottom: 45px;
+
+    }
+
+
+    /* ------------------------------------------------------
+       MOBILE CONTENT
+       IMPORTANT: CENTER EVERYTHING
+    ------------------------------------------------------ */
+
+    .jayash-hero-content {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        text-align: center;
+
+    }
+
+
+    /* ------------------------------------------------------
+       MOBILE EYEBROW
+    ------------------------------------------------------ */
+
+    .jayash-hero-eyebrow {
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 8px;
+
+        margin-bottom: 17px;
+
+        font-size: 10px;
+
+        letter-spacing: 1.15px;
+
+        text-align: center;
+
+    }
+
+
+    .jayash-eyebrow-line {
+
+        width: 24px;
+
+        height: 2px;
+
+        flex-shrink: 0;
+
+    }
+
+
+    /* ------------------------------------------------------
+       MOBILE TITLE
+    ------------------------------------------------------ */
+
+    .jayash-hero-title {
+
+        width: 100%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        font-size: 30px;
+
+        line-height: 1.30;
+
+        letter-spacing: -1.4px;
+
+        text-align: center;
+
+    }
+
+
+    /* ------------------------------------------------------
+       MOBILE DESCRIPTION
+    ------------------------------------------------------ */
+
+    .jayash-hero-description {
+
+        width: 100%;
+
+        max-width: 500px;
+
+        margin-top: 19px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+        text-align: center;
+
+        font-size: 15.5px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* ------------------------------------------------------
+       MOBILE BUTTONS
+    ------------------------------------------------------ */
+
+    .jayash-hero-actions {
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 12px;
+
+        margin-top: 27px;
+
+    }
+
+
+    .jayash-hero-primary,
+    .jayash-hero-secondary {
+
+        width: 100%;
+
+        max-width: 360px;
+
+        min-height: 52px;
+
+        padding: 13px 20px;
+
+        justify-content: center;
+
+    }
+
+
+    /* ------------------------------------------------------
+       MOBILE TRUST FEATURES
+    ------------------------------------------------------ */
+
+    .jayash-hero-trust {
+
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 11px;
+
+        margin-top: 28px;
+
+    }
+
+
+    .jayash-trust-item {
+
+        justify-content: center;
+
+        align-items: center;
+
+        width: auto;
+
+        text-align: center;
+
+        font-size: 13px;
+
+    }
+
+
+    .jayash-trust-icon {
+
+        flex-shrink: 0;
+
+    }
+
+
+    /* ------------------------------------------------------
+       MOBILE VISUAL
+    ------------------------------------------------------ */
+
+    .jayash-hero-visual {
+
+        min-height: 370px;
+
+        margin-top: 20px;
+
+    }
+
+
+    .jayash-hero-visual-bg {
+
+        width: 310px;
+
+        height: 310px;
+
+        right: 50%;
+
+        transform: translate(50%, -50%);
+
+    }
+
+
+    .jayash-hero-image-wrapper {
+
+        width: 94%;
+
+        max-width: 450px;
+
+    }
+
+
+    /* ------------------------------------------------------
+       MOBILE EXPERIENCE BADGE
+    ------------------------------------------------------ */
+
+    .jayash-experience-badge {
+
+        left: 50%;
+
+        bottom: 18px;
+
+        transform: translateX(-50%);
+
+        gap: 10px;
+
+        padding: 12px 14px;
+
+        border-radius: 12px;
+
+    }
+
+
+    .jayash-experience-badge::before {
+
+        width: 40px;
+
+        height: 40px;
+
+        border-radius: 10px;
+
+        font-size: 18px;
+
+    }
+
+
+    .jayash-experience-number {
+
+        font-size: 24px;
+
+    }
+
+
+    .jayash-experience-text {
+
+        font-size: 9px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 400px) {
+
+    .jayash-hero-row {
+
+        padding-top: 22px;
+
+        padding-bottom: 40px;
+
+    }
+
+
+    .jayash-hero-eyebrow {
+
+        gap: 6px;
+
+        font-size: 10px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .jayash-eyebrow-line {
+
+        width: 20px;
+
+    }
+
+
+    .jayash-hero-title {
+
+        font-size: 30px;
+
+        line-height: 1.30;
+
+        letter-spacing: -1.2px;
+
+    }
+
+
+    .jayash-hero-description {
+
+        max-width: 340px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+    }
+
+
+    .jayash-hero-actions {
+
+        margin-top: 24px;
+
+    }
+
+
+    .jayash-hero-primary,
+    .jayash-hero-secondary {
+
+        max-width: 330px;
+
+    }
+
+
+    .jayash-hero-trust {
+
+        margin-top: 25px;
+
+    }
+
+
+    .jayash-hero-visual {
+
+        min-height: 330px;
+
+        margin-top: 18px;
+
+    }
+
+
+    .jayash-hero-visual-bg {
+
+        width: 275px;
+
+        height: 275px;
+
+    }
+
+
+    .jayash-experience-badge {
+
+        bottom: 12px;
+
+        padding: 10px 12px;
+
+    }
+
+
+    .jayash-experience-badge::before {
+
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 16px;
+
+    }
+
+
+    .jayash-experience-number {
+
+        font-size: 22px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   REDUCE MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .jayash-hero-primary,
+    .jayash-hero-secondary,
+    .jayash-hero-primary i,
+    .jayash-hero-secondary i {
+
+        transition: none;
+
+    }
+
+}
