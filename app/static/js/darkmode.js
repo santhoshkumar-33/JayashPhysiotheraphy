@@ -1,1 +1,0 @@
-console.log("Dark mode will be added later.");
